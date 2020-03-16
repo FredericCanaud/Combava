@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Combava</title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.png" alt="logo">
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="#siteWeb">Site Web</a></li>
+                <li><a href="#produits">Nos produits</a></li>
+                <li><a href="#careers">A propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <div id=container>
+            <main>
+                <section id="partie1">
+                    <h1>Venez savourer nos succulents agrumes !</h1>
+                    <p>
+                         Des degustations gratuites auront lieu partout en France cette annee ! 
+                    </p>
+                </section>
+                <div class="PartPrincipale">
+                    <section id="partie2">
+                        <div>
+                            <h1>Combava, l'entreprise respectueuse du fruit !</h1>
+                            <p>
+                                L'entreprise Combava fabrique, depuis 1855, des agrumes juteux et savoureux qui ravissent les papilles des Provençaux.
+                            </p>
+                            <p>
+                                Nous avons aujourd'hui l'honneur de vous inviter à nos dégustations VIP, dans laquelle vous pourrez essayer et déguster les plus beaux fruits et jus de nos régions, et notamment notre fameuse citronnade.
+                            </p>
+                            <p>
+                                Pour participer à nos prochaines dégustations, veuillez remplir le formulaire ci-contre, et choississez à quel événement vous souhaitez participer.
+                            </p>
+                            <p>
+                                Pour trouver les événements les plus proches de chez vous, consultez la carte Google Maps ci-dessous :
+                            </p>
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1dfBAOXFGSI6Hk-C956L7xTPpn-qrFc9o" width="640" height="480"></iframe>
+                        </div>
+                        <img src=combava.jpg alt="Combava">
+                    </section>
+                    <section id="partie3">
+                        <div>
+                            <h1> Notre fameuse citronnade ! </h1>
+                            <p>
+                                 Que serait Combava sans le succès notre fameuse citronnade, cette boisson traditionnelle méditérannéenne faite à base de jus de citrons jaunes des plantations fruitiers de nos éleveurs, et donc garantis sans ajout artificiel. 
+                            </p>
+                            <p>
+                                 Vous pourrez retrouver la retrouver dans nos nombreuses dégustations que nous organisons partout en France ! 
+                            </p>
+                        </div>
+                        <img src="img/citronnade.png" alt="citronnade">
+                    </section>
+                    <section id="partie4">
+                        <h1>Remplissez ce formulaire pour vous inscrire aux prochaines dégustations !</h1>
+                        <form action="/ma-page-de-traitement" method="post">
+                                <div>
+                                    <input type="radio" id="monsieur" name="user_civility" value='monsieur'>
+                                    <label for="monsieur">Je suis un homme</label>
+                                    <input type="radio" id="madame" name="user_civility" value='madame'>
+                                    <label for="madame">Je suis une femme</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="name" name="user_name" placeholder="Nom" class="basicInput">
+                                </div>
+                                <div>
+                                    <input type="text" id="firstname" name="user_firstname" placeholder="Prénom" class="basicInput">
+                                </div>
+                                <div>
+                                    <input type="email" id="mail" name="user_mail" placeholder="Adresse e-mail" class="basicInput">
+                                </div>
+                                <div>
+                                    <input type="tel" id="phone" name="user_phone" placeholder='Numéro de téléphone' class="basicInput" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required>
+                                </div>
+                                <div>
+                                    <label for="participation-select">Participation à un événement :</label>
+                                    <select id="participation-select">
+                                        <option value="">--Choisissez un événement--</option>
+                                        <option value="saintJunien">Biocoop Saint-Junien</option>
+                                        <option value="toulouse">AMAP</option>
+                                        <option value="rennes">Bio-Rennes</option>
+                                        <option value="paris">Canal Bio</option>
+                                        <option value="tourcoing">Artisans du Monde - Tourcoing</option>
+                                        <option value="nancy">Bio c'Bon</option>
+                                        <option value="besancon">L'Eau Vive Besançon</option>
+                                        <option value="bourgLesValences">AMAP Le Goût Nature</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label>Je souhaite recevoir par email des informations sur toute l'actualité : calendrier des événements, alertes de mise en vente, nouveautés, exclusivités :</label>
+                                    <div>
+                                        <input type="radio" id="info_oui" name="user_info" value='info_oui'>
+                                        <label for="info_oui">J'accepte</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="info_non" name="user_info" value='info_non'>
+                                        <label for="info_non">Je refuse</label>
+                                    </div>
+                                </div>
+                                <div id="btn">
+                                    <input type="submit" value="Envoyer le formulaire">
+                                </div>
+                        </form>
+                        <h1> Et n'oubliez pas de nous suivre sur </h1>
+                        <div id="logo">
+                            <img src="img/facebook.png" alt="Facebook">
+                            <img src="img/twitter.png" alt="Twitter">
+                            <img src="img/instagram.png" alt="Instagram">
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <p>
+                 © 2019 Combava Corporation. Tous droits réservés. 
+            </p>
+            <p>
+                 Sécurité 
+            </p>
+            <p>
+                 Informations légales 
+            </p>
+            <p>
+                 Confidentialité 
+            </p>
+        </footer>
+    </body>
+</html>
